@@ -174,13 +174,11 @@ section {
 .feedback {
   height: 700px;
   text-align: center;
-  background-image: url("../img/bg-feedback.png");
+  /*background-image: url("../img/bg-feedback.png");
   background-size: cover;
   background-color: rgba(45, 57, 80, 0.9);
-  z-index: 1; }
-  .feedback:after {
-    background-color: rgba(45, 57, 80, 0.9);
-    z-index: 2; }
+  z-index: 1;*/
+  background: linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png"); }
   .feedback .wrapper {
     width: 560px; }
   .feedback h2 {
@@ -216,9 +214,51 @@ section {
     font-size: 15px;
     background-color: transparent; }
   #feedback-form label {
+    float: left;
     color: white;
     font-family: Lato;
     font-size: 15px;
     text-align: left; }
+    #feedback-form label input {
+      background-color: #909090;
+      width: 17px;
+      height: 17px; }
+  #feedback-form input[value] {
+    float: right;
+    color: white;
+    font-family: Lato;
+    font-size: 18px;
+    background-color: transparent;
+    width: 142px;
+    height: 47px;
+    border: 1px solid #15a4fa;
+    border-radius: 2px; }
+
+.footer {
+  height: 90px;
+  background-color: #f6f9f9; }
+  .footer span {
+    float: left;
+    color: #999;
+    font-family: Lato;
+    font-size: 15px; }
+
+.footer-icons {
+  float: right;
+  list-style: none;
+  padding: 0; }
+  .footer-icons li {
+    display: inline-block; }
+    .footer-icons li a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: #15a4fa;
+      border-radius: 2px;
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      text-align: center;
+      line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */

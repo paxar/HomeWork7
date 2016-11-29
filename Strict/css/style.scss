@@ -236,16 +236,14 @@ section {
 
   text-align: center;
 
-  background-image: url("../img/bg-feedback.png");
+  /*background-image: url("../img/bg-feedback.png");
   background-size: cover;
   background-color: rgba(45, 57, 80, 0.9);
-  z-index: 1;
+  z-index: 1;*/
 
-  &:after {
-    background-color: rgba(45, 57, 80, 0.9);
-    z-index: 2;
+  background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
 
-  }
+
 
 
   .wrapper {
@@ -291,10 +289,67 @@ section {
     background-color: transparent;
   }
   label {
+    float: left;
     color: white;
     font-family: Lato;
     font-size: 15px;
     text-align: left;
+    input {
+      background-color: #909090;
+      width: 17px;
+      height: 17px;
+    }
+
+  }
+
+  input[value] {
+    float: right;
+    color: white;
+    font-family: Lato;
+    font-size: 18px;
+    background-color: transparent;
+    width: 142px;
+    height: 47px;
+    border: 1px solid #15a4fa;
+    border-radius: 2px;
+
+
+  }
+}
+
+// ---------------footer ---------------
+
+.footer {
+  height: 90px; //temp!
+  background-color: #f6f9f9;
+  span {
+    float: left;
+    color: #999;
+    font-family: Lato;
+    font-size: 15px;
+  }
+}
+
+.footer-icons {
+  float: right;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: #15a4fa;
+      border-radius: 2px;
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      text-align: center;
+      line-height: 40px;
+    };
+
   }
 }
 
