@@ -9,9 +9,108 @@
   color: #2d3950;
   background-color: #f6f9f9; }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px dotted; }
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both; }
+
+section {
+  border: 1px dotted blue; }
+
+.header {
+  height: 99px;
+  background-color: #f6f9f9; }
+
+.intro {
+  height: 800px;
+  background: url("../img/bg-intro.png") center no-repeat;
+  background-size: cover; }
+  .intro h2 {
+    color: white;
+    font-family: Lato;
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center; }
+  .intro p {
+    color: white;
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center; }
+  .intro .intro-button {
+    width: 178px;
+    border: 1px solid #15a4fa;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    font-family: Lato;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    display: block; }
+  .intro .intro-scroll-link {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    display: block; }
+
+.content {
+  height: 340px;
+  background-color: #f6f9f9; }
+  .content h2 {
+    color: #2d3950;
+    font-family: Lato;
+    font-size: 40px;
+    text-align: center; }
+  .content p {
+    color: #999;
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center; }
+
+.icons {
+  height: 340px;
+  background-color: white; }
+  .icons .icons-list {
+    list-style: none; }
+    .icons .icons-list li {
+      display: inline-block;
+      width: 316px;
+      text-align: center;
+      margin: 0 24px; }
+      .icons .icons-list li .fa-paper-plane,
+      .icons .icons-list li .fa-mobile,
+      .icons .icons-list li .fa-bullhorn {
+        width: 100px;
+        height: 100px;
+        border-radius: 2px;
+        background: #2ab0ed;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #2ab0ed 51%, #bfe8f9 51%, #48baff 51%, #5fc3ff 51%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #2ab0ed 51%, #bfe8f9 51%, #48baff 51%, #5fc3ff 51%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #2ab0ed 51%, #bfe8f9 51%, #48baff 51%, #5fc3ff 51%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#5fc3ff',GradientType=1 );
+        /* IE6-9 */
+        line-height: 100px;
+        color: white;
+        font-size: 40px; }
+      .icons .icons-list li h3 {
+        color: #2d3950;
+        font-family: Lato;
+        font-size: 22px; }
+      .icons .icons-list li p {
+        color: #999;
+        font-family: Lato;
+        font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

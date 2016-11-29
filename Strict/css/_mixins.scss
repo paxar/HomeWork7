@@ -1,0 +1,8 @@
+@mixin icon-gradient {
+  background: rgb(42,176,237); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(42,176,237,1) 51%, rgba(191,232,249,1) 51%, rgba(72,186,255,1) 51%, rgba(95,195,255,1) 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(42,176,237,1) 51%,rgba(191,232,249,1) 51%,rgba(72,186,255,1) 51%,rgba(95,195,255,1) 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(42,176,237,1) 51%,rgba(191,232,249,1) 51%,rgba(72,186,255,1) 51%,rgba(95,195,255,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+}
