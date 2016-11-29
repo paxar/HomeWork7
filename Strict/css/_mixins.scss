@@ -7,9 +7,9 @@
 
 }
 
-@mixin transition($sec) {
-  -webkit-transition-duration: $sec;
-  -o-transition-duration: $sec;
-  -moz-transition-duration: $sec;
-  transition-duration: $sec;
+@mixin transition($s) {
+  -webkit-transition-duration: $s;
+  -o-transition-duration: $s;
+  -moz-transition-duration: $s;
+  transition-duration: $s;
 }
