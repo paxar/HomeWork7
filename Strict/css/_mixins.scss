@@ -6,3 +6,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
 
 }
+
+@mixin transition($sec) {
+  -webkit-transition-duration: $sec;
+  -o-transition-duration: $sec;
+  -moz-transition-duration: $sec;
+  transition-duration: $sec;
+}
