@@ -2,141 +2,131 @@
 @import "mixins";
 @import "variables";
 
-
-
 //------------shared styles -------------------
 
 .body {
   font-family: $Lato;
   color: $black;
-  background-color: #f6f9f9;
+  background-color: $bg-gray;
 }
 
 .wrapper {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  //border: 1px dotted; //TEST
 }
-
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-section {
-  //border: 1px dotted blue;  // TEMP !
-}
-
 
 //-------------------- header ---------------------
 
 .header {
   height: 99px; // TEMP!
   background-color: $bg-gray;
+
   h1 {
     margin: 27px 35px;
   }
-
 }
 
 // ---------------------- main ----------------------
 // ----------------------- intro --------------------
 
 .intro {
-  //height: 800px; // TEMP!
   background: url("../img/bg-intro.png") center no-repeat;
   background-size: cover;
 
   h2 {
-    color: $white;
+    width: 600px;
+    margin: 200px auto 35px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $blue;
     font-family: $Lato;
     font-size: 120px;
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
-    border-bottom: 2px solid #15a4fa;
-    width: 600px;
-    padding-bottom: 5px;
-    margin: 200px auto 35px;
-
-  }
-  p {
     color: $white;
+  }
+
+  p {
+    padding-bottom: 42px;
     font-family: $Lato;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 42px;
-
+    color: $white;
   }
+
   .intro-button {
     width: 178px;
-    border: 1px solid #15a4fa;
+    margin: 0 auto 165px;
+    padding: 17px 0;
+    border: 1px solid $blue;
     border-radius: 2px;
     text-decoration: none;
-    color: $white;
     font-family: $Lato;
     font-size: 18px;
     text-align: center;
     display: block;
-    padding: 17px 0;
-    margin: 0 auto 165px;
+    color: $white;
+    @include transition(0.2s);
+
+    &:hover {
+      background-color: $blue;
+      @include transition(0.2s);
+    }
   }
+
   .intro-scroll-link {
+    display: block;
+    margin: 0 auto 72px;
     font-size: 36px;
     color: $white;
     text-align: center;
-    display: block;
-    margin: 0 auto 72px;
-
   }
-
 }
 
 //---------------- content --------------
 .content {
-  //height: 340px; // TEMP!
   background-color: $bg-gray;
 
   h2 {
-    color: $black;
+    margin-top: 76px;
+    margin-bottom: 16px;
     font-family: $Lato;
     font-weight: normal;
     font-size: 40px;
     text-align: center;
-    margin-top: 76px;
-    margin-bottom: 16px;
+    color: $black;
   }
+
   p {
     width: 1130px;
-    color: $gray;
+    margin-top: 0;
+    margin-bottom: 105px;
     font-family: $Lato;
     font-size: 20px;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 105px;
     line-height: 32px;
+    color: $gray;
   }
-
 }
 
 // -------------------- icons -------------
 
 .icons {
-  //height: 340px; // TEMP!
-  background-color: $bg-white;
+  background-color: $white;
+
   .icons-list {
-    list-style: none;
     margin-top: 65px;
     margin-bottom: 52px;
+    list-style: none;
+
 
     li {
       display: inline-block;
       width: 316px;
-      text-align: center;
       margin: 0 24px;
+      text-align: center;
+
 
       &:nth-child(n+2) {
         margin-left: 48px;
@@ -148,11 +138,11 @@ section {
         width: 100px;
         height: 100px;
         border-radius: 2px;
-        @include icon-gradient;
         line-height: 100px;
-        color: $white;
         font-size: 40px;
         text-shadow: 1px 1px 1px #4468a9;
+        color: $white;
+        @include icon-gradient;
       }
 
       .fa-mobile {
@@ -160,86 +150,78 @@ section {
       }
 
       h3 {
-        color: $black;
+        margin: 24px auto;
         font-family: $Lato;
         font-size: 22px;
         font-weight: normal;
-        margin: 24px auto;
+        color: $black;
       }
 
       p {
-        color: $gray;
         font-family: $Lato;
         font-size: 15px;
+        color: $gray;
     }
-
-
-
     }
   }
-
 }
 
 // -----------------thumbnails ---------
 
 .thumbnails {
-  //height: 900px; //TEMP!
   background-color: $bg-gray;
   text-align: center;
+
   h2 {
-    color: $black;
+    margin-top: 70px;
+    margin-bottom: 15px;
     font-family: $Lato;
     font-size: 41px;
     font-weight: normal;
-    margin-top: 70px;
-    margin-bottom: 15px;
+    color: $black;
   }
+
   p {
-    color: #909090;
+    margin-bottom: 70px;
     font-family: $Lato;
     font-size: 15px;
-    margin-bottom: 70px;
+    color: #909090;
   }
 }
 
 .thumbnails-list {
-  list-style: none;
-  padding: 0;
   margin-bottom: 100px;
+  padding: 0;
+  list-style: none;
 
   &>li {
     display: inline-block;
     overflow: hidden;
-    //padding: 10px;
     position: relative;
-
     width: 360px; // for hover
     height: 260px; // for hover
     margin: 13px;
-
-
   }
+
   & li:hover .hover {
     opacity: 1;
     @include transition(0.6s)
   }
 }
-.hover {
 
+.hover {
   position: absolute;
   top: 0;
   width: inherit;
   height: inherit;
   background-color: rgba(21, 164, 250, 0.8);
-  //transition
-  opacity: 0;
+  opacity: 0;  //hover hide
   @include transition(0.6s);
 
   .hover-icons {
-    list-style: none;
-    padding: 0;
     margin-top: 100px;
-
+    padding: 0;
+    list-style: none;
 
     li {
       display: inline-block;
@@ -248,42 +230,43 @@ section {
         width: 42px;
         height: 42px;
         display: block;
-        color: $white;
+        border: 1px solid white;
+        border-radius: 2px;
         text-decoration: none;
         line-height: 43px;
         font-size: 16px;
-        border: 1px solid white;
-        border-radius: 2px;
+        color: $white;
       }
     }
-
   }
 }
 
 // --------------- feedback -----------------
 .feedback {
-  //height: 700px; //TEMP!
   text-align: center;
   background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
 
   .wrapper {
     width: 560px;
   }
+
   h2 {
-    color: $white;
+    margin-top: 62px;
+    margin-bottom: 20px;
     font-family: $Lato;
     font-size: 41px;
     font-weight: normal;
-    margin-top: 62px;
-    margin-bottom: 20px;
+    color: $white;
   }
+
   p {
-    color: $gray;
+    margin-bottom: 50px;
     font-family: $Lato;
     font-size: 15px;
-    margin-bottom: 50px;
+    color: $gray;
   }
 }
+
 #feedback-form {
   width: inherit;
 
@@ -291,21 +274,24 @@ section {
   input[type="email"] {
     width: 535px;
     height: 62px;
-    border: 1px solid #999;
+    margin-bottom: 16px;
+    padding-left: 21px;
+    border: 1px solid $gray;
     border-radius: 2px;
-    color: $gray;
     font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
     outline: none;
-    margin-bottom: 16px;
-    padding-left: 21px;
-
+    color: $gray;
   }
+
   textarea {
     width: 534px;
     height: 137px;
-    border: 1px solid #999;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 23px;
+    border: 1px solid $gray;
     border-radius: 2px;
     resize: none;
     outline: none;
@@ -313,9 +299,6 @@ section {
     font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
-    padding-left: 20px;
-    padding-top: 23px;
-    margin-bottom: 15px;
   }
 
   input[type="checkbox"] {
@@ -325,98 +308,101 @@ section {
       content: "\2713";
       text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
       font-size: 15px;
-      color: #f3f3f3;
       text-align: center;
       line-height: 15px;
+      color: #f3f3f3;
     }
   }
+
   label {
     float: left;
-    color: $white;
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    padding-left: 25px;
     font-family: $Lato;
     font-size: 15px;
     text-align: left;
-    margin-top: 15px;
-    display: inline-block;
     cursor: pointer;
-    position: relative;
-    padding-left: 25px;
+    color: $white;
 
     &:before {
-      border-radius: 3px;
-      content: "";
-      display: inline-block;
       width: 16px;
       height: 16px;
-      margin-right: 10px;
       position: absolute;
       left: 0;
       bottom: 1px;
+      display: inline-block;
+      content: "";
+      margin-right: 10px;
       background-color: #aaa;
+      border-radius: 3px;
     }
-
   }
 
   input[type="submit"] {
     float: right;
-    color: $white;
+    width: 142px;
+    height: 47px;
+    margin-bottom: 110px;
+    border: 1px solid $blue;
+    border-radius: 2px;
     font-family: $Lato;
     font-size: 18px;
     background-color: transparent;
-    width: 142px;
-    height: 47px;
-    border: 1px solid #15a4fa;
-    border-radius: 2px;
-    margin-bottom: 110px;
+    color: $white;
+    @include transition(0.2s);
 
-
+    &:hover {
+      background-color: $blue;
+      @include transition(0.2s);
+    }
   }
 }
 
 // ---------------footer ---------------
 
 .footer {
-  //height: 90px; //temp!
   background-color: $bg-gray;
+
   span {
     float: left;
-    color: $gray;
-    font-family: $Lato;
-    font-size: 15px;
     margin-top: 37px;
     margin-left: 20px;
+    font-family: $Lato;
+    font-size: 15px;
+    color: $gray;
   }
 }
 
 .footer-icons {
   float: right;
-  list-style: none;
-  padding: 0;
   margin: 24px 20px 24px 0;
+  padding: 0;
+  list-style: none;
 
   li {
     display: inline-block;
+    overflow: hidden;
+
     a {
       display: block;
       width: 40px;
       height: 40px;
-      background-color: #15a4fa;
+      background-color: $blue;
       border-radius: 2px;
       text-decoration: none;
-      color: $white;
       font-size: 17px;
       text-align: center;
       line-height: 40px;
+      color: $white;
+      @include transition(0.3s);
 
       &:hover {
         font-size: 25px;
-        line-height: 33px;
-
-
-
+        @include transition(0.3s);
       }
-    };
-
+    }
   }
 }
 
