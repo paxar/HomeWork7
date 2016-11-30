@@ -7,7 +7,7 @@
 //------------shared styles -------------------
 
 .body {
-  font-family: Lato, sans-serif;
+  font-family: $Lato;
   color: #2d3950;
   background-color: #f6f9f9;
 }
@@ -30,18 +30,15 @@ section {
   border: 1px dotted blue;  // TEMP !
 }
 
-//------------------- mixins ------------------
-
-
-
-
-
 
 //-------------------- header ---------------------
 
 .header {
   height: 99px; // TEMP!
-  background-color: #f6f9f9;
+  background-color: $bg-gray;
+  h1 {
+    margin: 27px 50px;
+  }
 
 }
 
@@ -55,18 +52,25 @@ section {
 
   h2 {
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 120px;
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
+    border-bottom: 2px solid #15a4fa;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
 
   }
   p {
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 20px;
     text-align: center;
+    padding-bottom: 42px;
 
   }
   .intro-button {
@@ -75,19 +79,21 @@ section {
     border-radius: 2px;
     text-decoration: none;
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 18px;
     margin: 0 auto;
     text-align: center;
     display: block;
+    padding: 17px 0;
+    margin-bottom: 165px;
   }
   .intro-scroll-link {
-    font-size: 30px;
-
+    font-size: 36px;
     color: white;
     margin: 0 auto;
     text-align: center;
     display: block;
+    margin-bottom: 72px;
 
   }
 
@@ -96,19 +102,26 @@ section {
 //---------------- content --------------
 .content {
   height: 340px; // TEMP!
-  background-color: #f6f9f9;
+  background-color: $bg-gray;
 
   h2 {
     color: #2d3950;
-    font-family: Lato;
+    font-family: $Lato;
+    font-weight: normal;
     font-size: 40px;
     text-align: center;
+    margin-top: 76px;
+    margin-bottom: 16px;
   }
   p {
+    width: 1130px;
     color: #999;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 20px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 105px;
+    line-height: 32px;
   }
 
 }
@@ -117,14 +130,21 @@ section {
 
 .icons {
   height: 340px; // TEMP!
-  background-color: white;
+  background-color: $bg-white;
   .icons-list {
     list-style: none;
+    margin-top: 65px;
+    margin-bottom: 52px;
+
     li {
       display: inline-block;
       width: 316px;
       text-align: center;
       margin: 0 24px;
+
+      &:nth-child(n+2) {
+        margin-left: 48px;
+      }
 
       .fa-paper-plane,
       .fa-mobile,
@@ -136,17 +156,24 @@ section {
         line-height: 100px;
         color: white;
         font-size: 40px;
-
-
+        text-shadow: 1px 1px 1px #4468a9;
       }
+
+      .fa-mobile {
+        font-size: 70px;
+      }
+
       h3 {
         color: #2d3950;
-        font-family: Lato;
+        font-family: $Lato;
         font-size: 22px;
+        font-weight: normal;
+        margin: 24px auto;
       }
+
       p {
         color: #999;
-        font-family: Lato;
+        font-family: $Lato;
         font-size: 15px;
     }
 
@@ -161,32 +188,38 @@ section {
 
 .thumbnails {
   height: 900px; //TEMP!
-  background-color: #f6f9f9;
+  background-color: $bg-gray;
   text-align: center;
   h2 {
     color: #2d3950;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 41px;
+    font-weight: normal;
+    margin-top: 70px;
+    margin-bottom: 15px;
   }
   p {
     color: #909090;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 15px;
+    margin-bottom: 70px;
   }
 }
 
 .thumbnails-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 100px;
 
   &>li {
     display: inline-block;
     overflow: hidden;
     //padding: 10px;
     position: relative;
-    margin: 5px;
+
     width: 360px; // for hover
     height: 260px; // for hover
+    margin: 13px;
 
 
   }
@@ -234,65 +267,63 @@ section {
 // --------------- feedback -----------------
 .feedback {
   height: 700px; //TEMP!
-
   text-align: center;
-
-  /*background-image: url("../img/bg-feedback.png");
-  background-size: cover;
-  background-color: rgba(45, 57, 80, 0.9);
-  z-index: 1;*/
-
   background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
-
-
-
 
   .wrapper {
     width: 560px;
   }
   h2 {
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 41px;
+    font-weight: normal;
+    margin-top: 62px;
+    margin-bottom: 20px;
   }
   p {
     color: #999;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 15px;
+    margin-bottom: 50px;
   }
 }
 #feedback-form {
   width: inherit;
 
   input[name] {
-    width: 555px;
-    height: 62px; //TEMP
+    width: 535px;
+    height: 62px;
     border: 1px solid #999;
     border-radius: 2px;
-
     color: #999;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
     outline: none;
+    margin-bottom: 16px;
+    padding-left: 21px;
 
   }
   textarea {
-    width: 552px;
-    height: 162px; //TEMP!
+    width: 534px;
+    height: 137px;
     border: 1px solid #999;
     border-radius: 2px;
     resize: none;
     outline: none;
     color: #999;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
+    padding-left: 20px;
+    padding-top: 23px;
+    margin-bottom: 15px;
   }
   label {
     float: left;
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 15px;
     text-align: left;
     input {
@@ -306,7 +337,7 @@ section {
   input[value] {
     float: right;
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 18px;
     background-color: transparent;
     width: 142px;
@@ -322,11 +353,11 @@ section {
 
 .footer {
   height: 90px; //temp!
-  background-color: #f6f9f9;
+  background-color: $bg-gray;
   span {
     float: left;
     color: #999;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 15px;
   }
 }
