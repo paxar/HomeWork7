@@ -8,7 +8,7 @@
 
 .body {
   font-family: $Lato;
-  color: #2d3950;
+  color: $black;
   background-color: #f6f9f9;
 }
 
@@ -16,7 +16,7 @@
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px dotted; //TEST
+  //border: 1px dotted; //TEST
 }
 
 
@@ -27,7 +27,7 @@
 }
 
 section {
-  border: 1px dotted blue;  // TEMP !
+  //border: 1px dotted blue;  // TEMP !
 }
 
 
@@ -37,7 +37,7 @@ section {
   height: 99px; // TEMP!
   background-color: $bg-gray;
   h1 {
-    margin: 27px 50px;
+    margin: 27px 35px;
   }
 
 }
@@ -46,12 +46,12 @@ section {
 // ----------------------- intro --------------------
 
 .intro {
-  height: 800px; // TEMP!
+  //height: 800px; // TEMP!
   background: url("../img/bg-intro.png") center no-repeat;
   background-size: cover;
 
   h2 {
-    color: white;
+    color: $white;
     font-family: $Lato;
     font-size: 120px;
     font-weight: 700;
@@ -59,14 +59,12 @@ section {
     text-align: center;
     border-bottom: 2px solid #15a4fa;
     width: 600px;
-    margin: 0 auto;
-    margin-top: 200px;
     padding-bottom: 5px;
-    margin-bottom: 35px;
+    margin: 200px auto 35px;
 
   }
   p {
-    color: white;
+    color: $white;
     font-family: $Lato;
     font-size: 20px;
     text-align: center;
@@ -78,22 +76,20 @@ section {
     border: 1px solid #15a4fa;
     border-radius: 2px;
     text-decoration: none;
-    color: white;
+    color: $white;
     font-family: $Lato;
     font-size: 18px;
-    margin: 0 auto;
     text-align: center;
     display: block;
     padding: 17px 0;
-    margin-bottom: 165px;
+    margin: 0 auto 165px;
   }
   .intro-scroll-link {
     font-size: 36px;
-    color: white;
-    margin: 0 auto;
+    color: $white;
     text-align: center;
     display: block;
-    margin-bottom: 72px;
+    margin: 0 auto 72px;
 
   }
 
@@ -101,11 +97,11 @@ section {
 
 //---------------- content --------------
 .content {
-  height: 340px; // TEMP!
+  //height: 340px; // TEMP!
   background-color: $bg-gray;
 
   h2 {
-    color: #2d3950;
+    color: $black;
     font-family: $Lato;
     font-weight: normal;
     font-size: 40px;
@@ -115,7 +111,7 @@ section {
   }
   p {
     width: 1130px;
-    color: #999;
+    color: $gray;
     font-family: $Lato;
     font-size: 20px;
     text-align: center;
@@ -129,7 +125,7 @@ section {
 // -------------------- icons -------------
 
 .icons {
-  height: 340px; // TEMP!
+  //height: 340px; // TEMP!
   background-color: $bg-white;
   .icons-list {
     list-style: none;
@@ -154,7 +150,7 @@ section {
         border-radius: 2px;
         @include icon-gradient;
         line-height: 100px;
-        color: white;
+        color: $white;
         font-size: 40px;
         text-shadow: 1px 1px 1px #4468a9;
       }
@@ -164,7 +160,7 @@ section {
       }
 
       h3 {
-        color: #2d3950;
+        color: $black;
         font-family: $Lato;
         font-size: 22px;
         font-weight: normal;
@@ -172,7 +168,7 @@ section {
       }
 
       p {
-        color: #999;
+        color: $gray;
         font-family: $Lato;
         font-size: 15px;
     }
@@ -187,11 +183,11 @@ section {
 // -----------------thumbnails ---------
 
 .thumbnails {
-  height: 900px; //TEMP!
+  //height: 900px; //TEMP!
   background-color: $bg-gray;
   text-align: center;
   h2 {
-    color: #2d3950;
+    color: $black;
     font-family: $Lato;
     font-size: 41px;
     font-weight: normal;
@@ -252,7 +248,7 @@ section {
         width: 42px;
         height: 42px;
         display: block;
-        color: white;
+        color: $white;
         text-decoration: none;
         line-height: 43px;
         font-size: 16px;
@@ -266,7 +262,7 @@ section {
 
 // --------------- feedback -----------------
 .feedback {
-  height: 700px; //TEMP!
+  //height: 700px; //TEMP!
   text-align: center;
   background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
 
@@ -274,7 +270,7 @@ section {
     width: 560px;
   }
   h2 {
-    color: white;
+    color: $white;
     font-family: $Lato;
     font-size: 41px;
     font-weight: normal;
@@ -282,7 +278,7 @@ section {
     margin-bottom: 20px;
   }
   p {
-    color: #999;
+    color: $gray;
     font-family: $Lato;
     font-size: 15px;
     margin-bottom: 50px;
@@ -291,12 +287,13 @@ section {
 #feedback-form {
   width: inherit;
 
-  input[name] {
+  input[type="text"],
+  input[type="email"] {
     width: 535px;
     height: 62px;
     border: 1px solid #999;
     border-radius: 2px;
-    color: #999;
+    color: $gray;
     font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
@@ -312,7 +309,7 @@ section {
     border-radius: 2px;
     resize: none;
     outline: none;
-    color: #999;
+    color: $gray;
     font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
@@ -335,11 +332,11 @@ section {
   }
   label {
     float: left;
-    color: white;
+    color: $white;
     font-family: $Lato;
     font-size: 15px;
     text-align: left;
-
+    margin-top: 15px;
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -360,9 +357,9 @@ section {
 
   }
 
-  input[value] {
+  input[type="submit"] {
     float: right;
-    color: white;
+    color: $white;
     font-family: $Lato;
     font-size: 18px;
     background-color: transparent;
@@ -370,6 +367,7 @@ section {
     height: 47px;
     border: 1px solid #15a4fa;
     border-radius: 2px;
+    margin-bottom: 110px;
 
 
   }
@@ -378,13 +376,15 @@ section {
 // ---------------footer ---------------
 
 .footer {
-  height: 90px; //temp!
+  //height: 90px; //temp!
   background-color: $bg-gray;
   span {
     float: left;
-    color: #999;
+    color: $gray;
     font-family: $Lato;
     font-size: 15px;
+    margin-top: 37px;
+    margin-left: 20px;
   }
 }
 
@@ -392,6 +392,7 @@ section {
   float: right;
   list-style: none;
   padding: 0;
+  margin: 24px 20px 24px 0;
 
   li {
     display: inline-block;
@@ -402,10 +403,18 @@ section {
       background-color: #15a4fa;
       border-radius: 2px;
       text-decoration: none;
-      color: white;
+      color: $white;
       font-size: 17px;
       text-align: center;
       line-height: 40px;
+
+      &:hover {
+        font-size: 25px;
+        line-height: 33px;
+
+
+
+      }
     };
 
   }

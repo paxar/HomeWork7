@@ -6,6 +6,17 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://use.fontawesome.com/34414cec8f.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#scroll").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                            top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 700);
+                });
+            });
+        </script>
     </head>
     <body>
 
@@ -15,21 +26,18 @@
             </div>
         </header>
 
-
         <main>
             <section class="intro">
-                <div class="wrapper">
+                <div class="wrapper" id="scroll">
                     <h2>STRICT</h2>
                     <p>STRICT is a responsive theme with a a clean and minimal look.</p>
                     <a class="intro-button" href="#">Call to action</a>
-                    <a class="intro-scroll-link" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
-
-
+                    <a class="intro-scroll-link" href="#content"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
             </section>
 
-            <section class="content">
+            <section class="content" id="content">
+
                 <div class="wrapper">
                     <h2>Simple & pure design.</h2>
                     <p>
@@ -46,27 +54,29 @@
                     <ul class="icons-list">
                         <li>
                             <i class="fa fa-mobile" aria-hidden="true"></i>
-
                             <h3>Optimized for all devices</h3>
-                            <p>STRICT has been designed to be fully
-                                responsive on all devices</p>
+                            <p>
+                                STRICT has been designed to be fully
+                                responsive on all devices
+                            </p>
                         </li>
                         <li>
                             <i class="fa fa-paper-plane" aria-hidden="true"></i>
-
                             <h3>Clean & Minimal Design</h3>
-                            <p>This multipurpose theme is especially created
-                                to be used for different projects.</p>
+                            <p>
+                                This multipurpose theme is especially created
+                                to be used for different projects.
+                            </p>
                         </li>
                         <li>
                             <i class="fa fa-bullhorn" aria-hidden="true"></i>
-
                             <h3>Font Awesome Icon</h3>
-                            <p>This multipurpose theme is especially created
-                                to be used for different projects.</p>
+                            <p>
+                                This multipurpose theme is especially created
+                                to be used for different projects.
+                            </p>
                         </li>
                     </ul>
-
                 </div>
             </section>
 
@@ -74,39 +84,29 @@
                 <div class="wrapper">
                     <h2>Showcase your work like a pro.</h2>
                     <p> Contact me if you like my work</p>
-
-
                     <ul class="thumbnails-list">
                         <li>
                             <img src="img/photo1.png" alt="thumbnail image">
                             <div class="hover">
                                 <ul class="hover-icons">
-
                                     <li>
-                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
-
                             </div>
                         </li>
                         <li>
                             <img src="img/photo2.png" alt="thumbnail image">
                             <div class="hover">
                                 <ul class="hover-icons">
-
-
                                     <li>
-                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -115,15 +115,11 @@
                             <img src="img/photo3.png" alt="thumbnail image">
                             <div class="hover">
                                 <ul class="hover-icons">
-
-
                                     <li>
-                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -132,15 +128,11 @@
                             <img src="img/photo4.png" alt="thumbnail image">
                             <div class="hover">
                                 <ul class="hover-icons">
-
-
                                     <li>
-                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -149,15 +141,11 @@
                             <img src="img/photo5.png" alt="thumbnail image">
                             <div class="hover">
                                 <ul class="hover-icons">
-
-
                                     <li>
-                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -166,22 +154,16 @@
                             <img src="img/photo6.png" alt="thumbnail image">
                             <div class="hover">
                                 <ul class="hover-icons">
-
-
                                     <li>
-                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-                                        </a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-
-
                 </div>
             </section>
 
@@ -189,40 +171,37 @@
                 <div class="wrapper">
                     <h2>Stay with us</h2>
                     <p>We ensure quailty & support</p>
-
                     <form action="#" id="feedback-form">
                         <input type="text" name="Name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Email Address" required>
                         <textarea name="Message" placeholder="Message" required></textarea>
-                        <input type="checkbox" id="check">
+                        <input type="checkbox" id="check" value="subscribe">
                         <label for="check">Subscribe Newsletter</label>
                         <input type="submit" value="Send">
                     </form>
-
-
                 </div>
             </section>
 
-
         </main>
-
 
         <footer class="footer">
             <div class="wrapper">
                 <span>Copyritht 2014, STRICT</span>
-
                 <ul class="footer-icons">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a></li>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
                 </ul>
             </div>
-
         </footer>
 
     </body>
