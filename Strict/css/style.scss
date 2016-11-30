@@ -1,5 +1,6 @@
 @import "fonts";
 @import "mixins";
+@import "variables";
 
 
 
@@ -277,7 +278,7 @@ section {
 
   }
   textarea {
-    width: 553px;
+    width: 552px;
     height: 162px; //TEMP!
     border: 1px solid #999;
     border-radius: 2px;
