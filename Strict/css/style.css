@@ -251,16 +251,36 @@ section {
     padding-left: 20px;
     padding-top: 23px;
     margin-bottom: 15px; }
+  #feedback-form input[type="checkbox"] {
+    display: none; }
+    #feedback-form input[type="checkbox"]:checked + label:before {
+      content: "\2713";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      font-size: 15px;
+      color: #f3f3f3;
+      text-align: center;
+      line-height: 15px; }
   #feedback-form label {
     float: left;
     color: white;
     font-family: Lato, sans-serif;
     font-size: 15px;
-    text-align: left; }
-    #feedback-form label input {
-      background-color: #909090;
-      width: 17px;
-      height: 17px; }
+    text-align: left;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px; }
+    #feedback-form label:before {
+      border-radius: 3px;
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #aaa; }
   #feedback-form input[value] {
     float: right;
     color: white;

@@ -320,16 +320,42 @@ section {
     padding-top: 23px;
     margin-bottom: 15px;
   }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + label:before {
+      content: "\2713";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+      font-size: 15px;
+      color: #f3f3f3;
+      text-align: center;
+      line-height: 15px;
+    }
+  }
   label {
     float: left;
     color: white;
     font-family: $Lato;
     font-size: 15px;
     text-align: left;
-    input {
-      background-color: #909090;
-      width: 17px;
-      height: 17px;
+
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+
+    &:before {
+      border-radius: 3px;
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #aaa;
     }
 
   }
