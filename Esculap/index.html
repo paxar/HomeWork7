@@ -10,10 +10,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript">
-            $(document).ready(function(){
-                $("#scroll").on("click","a", function (event) {
+            $(document).ready(function () {
+                $("#scroll").on("click", "a", function (event) {
                     event.preventDefault();
-                    var id  = $(this).attr('href'),
+                    var id = $(this).attr('href'),
                             top = $(id).offset().top;
                     $('body,html').animate({scrollTop: top}, 700);
                 });
@@ -22,34 +22,35 @@
     </head>
     <body>
         <div class="preheader">
-            <p>This site uses cookies, so that my service can work better. </p>
-            <a href="#">Accept</a>
+            <div class="wrapper">
+                <p>This site uses cookies, so that my service can work better. </p>
+                <a href="#">Accept</a></div>
         </div>
 
         <div class="section-bg">
+            <div class="wrapper">
 
-        <header class="header">
-            <nav><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>
-            </a></nav>
-        </header>
+                <header class="header">
+                    <nav><a href="#"><img src="img/nav-icon.png" alt="Navigation"></i>
+                    </a></nav>
+                </header>
 
 
-            <section class="intro">
-                <div class="wrapper" id="scroll">
-
-                    <img src="" alt="Main Photo" class="main-photo">
+                <section class="intro">
+                    <div class="border"><img src="img/my-photo.png" alt="Main Photo" class="main-photo"></div>
                     <h1>free portfolio PSD template
                         FOR GRAPHIC designerS </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                     <a class="intro-button" href="#">hire me</a>
                     <a class="intro-scroll-link" href="#content"><img src="img/arrow-down.png" alt=""></i></a>
-                </div>
-            </section>
+
+                </section>
+            </div>
 
         </div>
 
-        <section class="content" >
+        <section class="content">
 
             <div class="wrapper">
                 <h2>About Me</h2>
@@ -64,116 +65,107 @@
         </section>
 
 
+        <section class="icons">
+            <div class="wrapper">
+                <ul class="icons-list">
+                    <li>
+                        <img src="img/mobile-app-icon.png" alt="">
+                        <h3>MOBILE APP DESIGN</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/web-design-icon.png" alt="">
+                        <h3>WEB DESIGN</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/web-dev-icon.png" alt="">
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/prod-design-icon.png" alt="">
+                        <h3>PRODUCT DESIGN</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/ux-ui-icon.png" alt="">
+                        <h3>UX & UI</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/animations-icon.png" alt="">
+                        <h3>ANIMATIONS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="thumbnails">
+            <div class="wrapper">
+                <h2>Latest Works</h2>
 
+                <ul class="thumbnails-list">
+                    <li>
+                        <a href="#"><img src="img/work-1.png" alt="thumbnail image"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/work-2.png" alt="thumbnail image"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/work-3.png" alt="thumbnail image"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/work-4.png" alt="thumbnail image"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/work-5.png" alt="thumbnail image"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/work-6.png" alt="thumbnail image"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="partners">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/msft-logo-png.png" alt="Microsoft"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/samsung-logo-2015-nobg.png" alt="Samsung"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/ibm-logo.png" alt="IBM"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/google-2015-logo-svg.png" alt="Google"></a>
+                    </li>
+                </ul>
 
-
-
-
-
-            <section class="icons">
-                <div class="wrapper">
-                    <ul class="icons-list">
-                        <li>
-                            <img src="img/mobile-app-icon.png" alt="">
-                            <h3>MOBILE APP DESIGN</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.  Ut enim ad minim
-                            </p>
-                        </li>
-                        <li>
-                            <img src="img/web-design-icon.png" alt="">
-                            <h3>WEB DESIGN</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </li>
-                        <li>
-                            <img src="img/web-dev-icon.png" alt="">
-                            <h3>WEB DEVELOPMENT</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.  Ut enim ad minim
-                            </p>
-                        </li>
-                        <li>
-                            <img src="img/prod-design-icon.png" alt="">
-                            <h3>PRODUCT DESIGN</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.  Ut enim ad minim
-                            </p>
-                        </li>
-                        <li>
-                            <img src="img/ux-ui-icon.png" alt="">
-                            <h3>UX & UI</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </li>
-                        <li>
-                            <img src="img/animations-icon.png" alt="">
-                            <h3>ANIMATIONS</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.  Ut enim ad minim
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="thumbnails">
-                <div class="wrapper">
-                    <h2>Latest Works</h2>
-
-                    <ul class="thumbnails-list">
-                        <li>
-                            <a href="#"><img src="img/work-1.png" alt="thumbnail image"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/work-2.png" alt="thumbnail image"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/work-3.png" alt="thumbnail image"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/work-4.png" alt="thumbnail image"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/work-5.png" alt="thumbnail image"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/work-6.png" alt="thumbnail image"></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="partners">
-                <div class="wrapper">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="img/msft-logo-png.png" alt="Microsoft"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/samsung-logo-2015-nobg.png" alt="Samsung"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/ibm-logo.png" alt="IBM"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/google-2015-logo-svg.png" alt="Google"></a>
-                        </li>
-                    </ul>
-
-                </div>
-            </section>
-
+            </div>
+        </section>
 
 
         <footer class="footer">
