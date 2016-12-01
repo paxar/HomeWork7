@@ -6,8 +6,7 @@
 
 .body {
   font-family: $Lato;
-  color: $black;
-  background-color: $bg-gray;
+
 }
 
 .wrapper {
@@ -21,14 +20,14 @@
 
 
 
-//----------------- preheader --------------------------------
-.preheader {
+//----------------- top-panel --------------------------------
+.top-panel {
   height: 72px;  //TEMP
   background-color: #194277;
   p {
     display: inline-block;
     color: white;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 14px;
   }
   a {
@@ -41,7 +40,7 @@
     text-align: center;
     text-decoration: none;
     color: #194277;
-    font-family: Lato;
+    font-family: $Lato;
     font-size: 12px;
     font-weight: 700;
   }
@@ -81,9 +80,169 @@
 
     }
   }
+  h1 {
+    width: 810px;
+    margin: 0 auto;
+    color: white;
+    font-family: $Lato;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    width: 765px;
+
+    color: white;
+    margin: 0 auto;
+    font-family: $Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .intro-button {
+    display: block;
+    margin: 0 auto;
+    @include button-white;
+
+
+  }
+  .intro-scroll-link {
+    width: 23px;
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
 
 }
 
+//----------------- content ----------------------
+
+.content {
+  height: 405px; //TEMP
+
+  h2 {
+    color: $blue;
+    font-family: $Lato;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+  p {
+    width: 1135px;
+    margin: 0 auto;
+    color: $black;
+    font-family: $Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+
+//--------------- icons --------------------
+
+.icons {
+  height: 1145px; //TEMP
+  background-color: #f1f8ff;
+
+  h2 {
+    //margin: 0 auto;
+    color: $blue;
+    text-align: center;
+    font-family: $Lato;
+    font-size: 50px;
+    font-weight: 300;
+
+  }
+}
+
+.icons-list {
+  padding: 0;
+  list-style: none;
+
+
+  li {
+    display: inline-block;
+    width: 355px;
+    text-align: center;
+
+    h3 {
+      color: $blue;
+      font-family: $Lato;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    p {
+      color: #5a5a5a;
+      font-family: $Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 35px;
+    }
+  }
+}
+
+//-------------- thumbnails-------------
+.thumbnails {
+  height: 1020px;
+
+  h2 {
+    color: #3677fd;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.thumbnails-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      width: 361px;
+      height: 271px;
+      background-color: #f4f4f4;
+      border: 1px solid #f4f4f4;
+      border-radius: 10px;
+    }
+  }
+
+}
+
+
+//-------------- partners ---------------
+.partners {
+  height: 363px;
+  background-color: #f1f8ff;
+
+  h2 {
+    color: $blue;
+    font-family: $Lato;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.partners-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+}
 
 
 
