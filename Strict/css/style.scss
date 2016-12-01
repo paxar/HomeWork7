@@ -243,6 +243,7 @@
 .feedback {
   text-align: center;
   background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
+  background-size: cover;
 
   .wrapper {
     width: 560px;
