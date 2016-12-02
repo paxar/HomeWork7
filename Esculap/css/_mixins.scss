@@ -15,6 +15,7 @@
   width: 204px;
   padding: 12px 0;
   background-color: white;
+  border: 1px solid white;
   border-radius: 32px;
   color: #3695ff;
   font-family: Lato, sans-serif;
@@ -25,6 +26,13 @@
   text-decoration: none;
   text-align: center;
 }
+
+@mixin button-white-hover {
+  background-color: transparent;
+  color: white;
+}
+
+
 
 @mixin text-gradient {
   content: "";
