@@ -82,8 +82,7 @@
     display: table;
     border: 10px solid rgba(255, 255, 255, 0.05);
     border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 35px;
+    margin: 35px auto 0;
 
     img {
 	 display: block;
@@ -95,8 +94,7 @@
   }
   h1 {
     width: 810px;
-    margin: 0 auto;
-    margin-top: 43px;
+    margin: 43px auto 0;
     color: white;
     font-family: $Lato;
     font-size: 50px;
@@ -109,8 +107,7 @@
     width: 765px;
 
     color: white;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
     font-family: $Lato;
     font-size: 16px;
     font-weight: 300;
@@ -120,8 +117,7 @@
   }
   .intro-button {
     display: block;
-    margin: 0 auto;
-    margin-top: 68px;
+    margin: 68px auto 0;
 
     @include button-white;
     @include transition(0.5s);
@@ -137,11 +133,9 @@
     width: 23px;
 
     display: block;
-    margin: 0 auto;
-    margin-top: 94px;
-    margin-bottom: 15px;
+    margin: 94px auto 15px;
     text-align: center;
-    
+
   }
 
 }
@@ -161,9 +155,7 @@
   }
   p {
     width: 1135px;
-    margin: 0 auto;
-    margin-top: 46px;
-    margin-bottom: 104px;
+    margin: 46px auto 104px;
     color: $black;
     font-family: $Lato;
     font-size: 16px;
@@ -201,8 +193,7 @@
   li {
     display: inline-block;
     width: 360px;
-    margin: 0 25px;
-    margin-bottom: 72px;
+    margin: 0 25px 72px;
     text-align: center;
 
     .icons-list-icon-wrapper {
