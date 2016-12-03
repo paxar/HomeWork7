@@ -6,53 +6,48 @@
 
 .body {
   font-family: $Lato;
-
 }
 
 .wrapper {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  //border: 1px dotted gray;
 }
 
-
-
-
-
 //----------------- top-panel --------------------------------
+
 .top-panel {
-  //height: 72px;  //TEMP
-  background-color: #194277;
   text-align: center;
+  background-color: #194277;
+
   p {
     display: inline-block;
     margin: 28px 0;
-    color: white;
     font-family: $Lato;
     font-size: 14px;
+    color: white;
   }
+
   a {
     width: 112px;
     display: inline-block;
-    padding: 8px 0;
     margin-left: 40px;
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid white;
-    text-align: center;
-    text-decoration: none;
-    color: #194277;
+    padding: 8px 0;
     font-family: $Lato;
     font-size: 12px;
     font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    color: #194277;
     @include transition(0.5s);
 
     &:hover {
       background: transparent;
       color: white;
       @include transition(0.5s);
-
     }
   }
 }
@@ -60,9 +55,7 @@
 //--------------------- intro background-----------
 
 .section-bg {
-  //height: 800px; //TEMP
   @include bg-image;
-
 }
 
 //------------------------ header--------------------
@@ -71,42 +64,40 @@
   nav {
     float: right;
     margin-top: 35px;
-
   }
 }
 
 //----------------------intro --------------------------
 
 .intro {
+
   .border {
     display: table;
+    margin: 35px auto 0;
     border: 10px solid rgba(255, 255, 255, 0.05);
     border-radius: 50%;
-    margin: 35px auto 0;
 
     img {
-	 display: block;
-	 /* margin: 0 auto; */
-	 border: 9px solid rgba(255, 255, 255, 0.1);
-	 border-radius: 50%;
-
+      display: block;
+      border: 9px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
     }
   }
+
   h1 {
     width: 810px;
     margin: 43px auto 0;
-    color: white;
     font-family: $Lato;
     font-size: 50px;
     font-weight: 900;
     line-height: 60px;
     text-transform: uppercase;
     text-align: center;
+    color: white;
   }
+
   p {
     width: 765px;
-
-    color: white;
     margin: 20px auto 0;
     font-family: $Lato;
     font-size: 16px;
@@ -114,11 +105,12 @@
     line-height: 35px;
     text-transform: uppercase;
     text-align: center;
+    color: white;
   }
+
   .intro-button {
     display: block;
     margin: 68px auto 0;
-
     @include button-white;
     @include transition(0.5s);
 
@@ -126,60 +118,45 @@
       @include button-white-hover;
       @include transition(0.5s);
     }
-
-
   }
+
   .intro-scroll-link {
     width: 23px;
-
     display: block;
     margin: 94px auto 15px;
     text-align: center;
-
   }
-
 }
 
 //----------------- content ----------------------
 
 .content {
-  //height: 405px; //TEMP
 
   h2 {
-    color: $blue;
     margin-top: 90px;
-    font-family: $Lato;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
+    @include h2-blue;
   }
+
   p {
     width: 1135px;
     margin: 46px auto 104px;
-    color: $black;
     font-family: $Lato;
     font-size: 16px;
     font-weight: 400;
     line-height: 35px;
     text-align: center;
+    color: $black;
   }
 }
 
 //--------------- icons --------------------
 
 .icons {
-  //height: 1145px; //TEMP
   background-color: #f1f8ff;
 
   h2 {
-    //margin: 0 auto;
     margin-top: 80px;
-    color: $blue;
-    text-align: center;
-    font-family: $Lato;
-    font-size: 50px;
-    font-weight: 300;
-
+    @include h2-blue;
   }
 }
 
@@ -189,7 +166,6 @@
   list-style: none;
   text-align: center;
 
-
   li {
     display: inline-block;
     width: 360px;
@@ -197,72 +173,61 @@
     text-align: center;
 
     .icons-list-icon-wrapper {
-	 width: 142px;
-	 height: 142px;
+      width: 142px;
+      height: 142px;
+      margin: 0 auto;
+      border: 1px solid #b7c0c9;
+      border-radius: 50%;
+      line-height: 142px;
 
-	 margin: 0 auto;
-	 border: 1px solid #b7c0c9;
-	 border-radius: 50%;
-	 line-height: 142px;
-
-	 img {
-	   vertical-align: middle;
-
-
-	 }
+      img {
+        vertical-align: middle;
+      }
     }
 
     h3 {
-	 margin-top: 55px;
-	 margin-bottom: 0;
-      color: $blue;
+      margin-top: 55px;
+      margin-bottom: 0;
       font-family: $Lato;
       font-size: 24px;
       font-weight: 700;
+      color: $blue;
     }
+
     p {
-	 margin-top: 20px;
-      color: #5a5a5a;
+      margin-top: 20px;
       font-family: $Lato;
       font-size: 16px;
       font-weight: 400;
       line-height: 35px;
+      color: #5a5a5a;
     }
+
     &:nth-child(2),
-    &:nth-child(5){
-	 width: 305px;
+    &:nth-child(5) {
+      width: 305px;
     }
-
   }
-
 }
 
 //-------------- thumbnails-------------
 .thumbnails {
-  //height: 1020px;
 
   h2 {
     margin-top: 75px;
-    color: #3677fd;
-    font-family: $Lato;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
+    @include h2-blue;
   }
 }
 
 .thumbnails-list {
+  overflow: hidden;
   margin-top: 73px;
   margin-bottom: 166px;
   padding: 0;
   list-style: none;
   text-align: center;
-  /* margin: 0 auto; */
-  overflow: hidden;
-
 
   li {
-    display: block;
     float: left;
     margin: 25px 13px;
 
@@ -273,42 +238,33 @@
       background-color: #f4f4f4;
       border: 1px solid #f4f4f4;
       border-radius: 10px;
-	 line-height: 271px;
+      line-height: 271px;
       @include transition(0.3s);
 
       &:hover {
-        -webkit-box-shadow: 0 1px 5px 0 rgba(78,99,230,1);
-        -moz-box-shadow: 0 1px 5px 0 rgba(78,99,230,1);
-        box-shadow: 0 1px 5px 0 rgba(78,99,230,1);
+        -webkit-box-shadow: 0 1px 5px 0 rgba(78, 99, 230, 1);
+        -moz-box-shadow: 0 1px 5px 0 rgba(78, 99, 230, 1);
+        box-shadow: 0 1px 5px 0 rgba(78, 99, 230, 1);
         @include transition(0.3s);
       }
-	 img {
-	   vertical-align: bottom;
-	 }
 
+      img {
+        vertical-align: bottom;
+      }
     }
     &:nth-child(n+4) img {
-	 vertical-align: middle;
-	 //border: 1px solid gray;
+      vertical-align: middle;
     }
   }
 }
 
-
 //-------------- partners ---------------
 .partners {
-  //height: 363px;
   background-color: #f1f8ff;
 
   h2 {
     padding-top: 40px;
-    color: $blue;
-    font-family: $Lato;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
-
-
+    @include h2-blue;
   }
 }
 
@@ -322,10 +278,9 @@
   li {
     display: inline-block;
     height: 80px;
-
+    margin: 0 58px;
     line-height: 80px;
 
-    margin: 0 58px;
     a {
       @include transition(0.5s);
 
@@ -333,36 +288,33 @@
         -webkit-filter: contrast(40%);
         @include transition(0.5s);
       }
-
     }
 
     img {
-	 vertical-align: middle;
+      vertical-align: middle;
     }
   }
-
 }
-
-
 
 //-------------------- footer ------------------------------
 .footer {
-  /* Style for "Prostokąt" */
-  //height: 247px;
   @include bg-image;
+
   .footer-text1,
-  .footer-text2{
+  .footer-text2 {
     display: inline-block;
     margin-top: 90px;
     margin-bottom: 95px;
-    color: white;
     font-family: $Lato;
     font-size: 50px;
     font-weight: 300;
+    color: white;
   }
+
   .footer-text2 {
     font-weight: bold;
   }
+
   .footer-button {
     float: right;
     margin-top: 97px;
@@ -374,6 +326,5 @@
       @include button-white-hover;
       @include transition(0.5s);
     }
-
   }
 }
