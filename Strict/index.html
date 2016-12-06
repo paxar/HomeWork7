@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Home Work 7</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"><!-- скрипты лучше подключать перед body-->
         <script src="https://use.fontawesome.com/34414cec8f.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript">
@@ -26,8 +26,8 @@
             </div>
         </header>
 
-        <main>
-            <section class="intro">
+        <main><!-- на лендингах нету главной части контента, так что лучше это не делать-->
+            <section class="intro"><!-- это называется .hero -->
                 <div class="wrapper" id="scroll">
                     <h2>STRICT</h2>
                     <p>STRICT is a responsive theme with a a clean and minimal look.</p>
@@ -36,7 +36,7 @@
                 </div>
             </section>
 
-            <section class="content" id="content">
+            <section class="content" id="content"><!-- класс для секции не подходит, это какраз интро-->
 
                 <div class="wrapper">
                     <h2>Simple & pure design.</h2>
@@ -53,7 +53,7 @@
                 <div class="wrapper">
                     <ul class="icons-list">
                         <li>
-                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <i class="fa fa-mobile" aria-hidden="true"></i><!-- я бы добавил враппер сюда, что бы не стилить i-->
                             <h3>Optimized for all devices</h3>
                             <p>
                                 STRICT has been designed to be fully
@@ -80,9 +80,9 @@
                 </div>
             </section>
 
-            <section class="thumbnails">
+            <section class="thumbnails"> <!-- ну это не миниатюры, а скорее .portfolio -->
                 <div class="wrapper">
-                    <h2>Showcase your work like a pro.</h2>
+                    <h2>Showcase your work like a pro.</h2><!-- лучше добавлять класс для общих стилей -->
                     <p> Contact me if you like my work</p>
                     <ul class="thumbnails-list">
                         <li>
@@ -105,7 +105,7 @@
                                     <li>
                                         <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
-                                    <li>
+                                    <li><!-- сюда было бы круто добавить тоже ховер  -->
                                         <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
@@ -167,11 +167,11 @@
                 </div>
             </section>
 
-            <section class="feedback">
+            <section class="feedback"><
                 <div class="wrapper">
                     <h2>Stay with us</h2>
                     <p>We ensure quailty & support</p>
-                    <form action="#" id="feedback-form">
+                    <form action="#" id="feedback-form"><!-- ты решил, что списками верстать не круто? -->
                         <input type="text" name="Name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Email Address" required>
                         <textarea name="Message" placeholder="Message" required></textarea>
@@ -206,3 +206,5 @@
 
     </body>
 </html>
+
+<!-- довольно четко -->
