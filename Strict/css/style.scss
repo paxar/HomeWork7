@@ -2,17 +2,17 @@
 @import "mixins";
 @import "variables";
 
-// сразу - давай, что бы файлы сасса и те, что он компилирует были в разных папках
+// todo сразу - давай, что бы файлы сасса и те, что он компилирует были в разных папках
 
 //------------shared styles -------------------
-// подобные комменты лучше делать, что бы они компилировались тоже
+// todo подобные комменты лучше делать, что бы они компилировались тоже
 .body {
   font-family: $Lato;
   color: $black;
 }
 
 .wrapper {
-  width: 1200px; //вроде был 1170 размер
+  width: 1200px; // todo вроде был 1170 размер
   margin: 0 auto;
   overflow: hidden;
 }
@@ -32,14 +32,14 @@
 
 .intro {
   background: url("../img/bg-intro.png") center no-repeat;
-  background-size: cover;// это можно запихнуть в сокращенную запись 
+  background-size: cover;// todo это можно запихнуть в сокращенную запись
 
   h2 {
     width: 600px;
     margin: 200px auto 35px;
     padding-bottom: 5px;
     border-bottom: 2px solid $blue;
-    font-family: $Lato; //  и тут можно юзать сокращенную запись 
+    font-family: $Lato; //  todo и тут можно юзать сокращенную запись
     font-size: 120px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -133,7 +133,7 @@
       }
 
       .fa-paper-plane,
-      .fa-mobile, //а мог бы просто на .fa повешать эти все стиля
+      .fa-mobile, // todo а мог бы просто на .fa повешать эти все стиля
       .fa-bullhorn {
         width: 100px;
         height: 100px;
@@ -194,7 +194,7 @@
   padding: 0;
   list-style: none;
 
-  &>li { // сегодня говорили на уроке, в этой записи смысла нету 
+  &>li { // todo сегодня говорили на уроке, в этой записи смысла нету
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -203,7 +203,7 @@
     margin: 13px;
   }
 
-  & li:hover .hover { // аналогично и тут
+  & li:hover .hover { // todo аналогично и тут
     opacity: 1;
     @include transition(0.6s)
   }
@@ -247,7 +247,7 @@
   background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
   background-size: cover;
 
-  .wrapper { // лучше сделать другой блок внутри враппера и на него уже вешать эти стиля, враппер он просто враппер и менять его размер не рекомендуется 
+  .wrapper { // todo лучше сделать другой блок внутри враппера и на него уже вешать эти стиля, враппер он просто враппер и менять его размер не рекомендуется
     width: 560px;
   }
 
@@ -296,7 +296,7 @@
     border-radius: 2px;
     resize: none;
     outline: none;
-    color: $gray; // у тебя повторяются стиля на инпутах и тут, можно было это просто вынести как-то 
+    color: $gray; // todo у тебя повторяются стиля на инпутах и тут, можно было это просто вынести как-то
     font-family: Lato, sans-serif;
     font-size: 15px;
     background-color: transparent;
