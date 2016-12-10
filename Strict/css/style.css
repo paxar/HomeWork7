@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/Lato-Regular.eot");
-  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  src: url("../../fonts/Lato-Regular.eot");
+  src: url("../../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Lato-Regular.woff") format("woff"), url("../../fonts/Lato-Regular.ttf") format("truetype"), url("../../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*------------shared styles -------------------*/
@@ -14,32 +14,32 @@
   margin: 0 auto;
   overflow: hidden; }
 
+.captions {
+  font: normal 40px Lato, sans-serif;
+  text-align: center;
+  color: #2d3950; }
+
 /*-------------------- header ---------------------*/
 .header {
   background-color: #f6f9f9; }
   .header h1 {
     margin: 27px 35px; }
 
-/*---------------------- main ----------------------*/
-/* ----------------------- intro --------------------*/
+/* ----------------------- hero --------------------*/
 .hero {
-  background: url("../img/bg-intro.png") center/cover no-repeat;
-  background-size: cover; }
+  background: url("../img/bg-intro.png") center/cover no-repeat; }
   .hero h2 {
     width: 600px;
     margin: 200px auto 35px;
     padding-bottom: 5px;
     border-bottom: 2px solid #15a4fa;
-    font-family: Lato, sans-serif;
-    font-size: 120px;
-    font-weight: 700;
+    font: 700 120px Lato, sans-serif;
     letter-spacing: 5px;
     text-align: center;
     color: white; }
   .hero p {
     padding-bottom: 42px;
-    font-family: Lato, sans-serif;
-    font-size: 20px;
+    font: 20px Lato, sans-serif;
     text-align: center;
     color: white; }
   .hero .hero-button {
@@ -49,8 +49,7 @@
     border: 1px solid #15a4fa;
     border-radius: 2px;
     text-decoration: none;
-    font-family: Lato, sans-serif;
-    font-size: 18px;
+    font: 18px Lato, sans-serif;
     text-align: center;
     display: block;
     color: white;
@@ -71,25 +70,18 @@
     color: white;
     text-align: center; }
 
-/*---------------- content --------------*/
+/*---------------- intro --------------*/
 .intro {
   background-color: #f6f9f9; }
-  .intro h2 {
+  .intro .captions {
     margin-top: 76px;
-    margin-bottom: 16px;
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-size: 40px;
-    text-align: center;
-    color: #2d3950; }
+    margin-bottom: 16px; }
   .intro p {
     width: 1130px;
     margin-top: 0;
     margin-bottom: 105px;
-    font-family: Lato, sans-serif;
-    font-size: 20px;
+    font: 20px/32px Lato, sans-serif;
     text-align: center;
-    line-height: 32px;
     color: #999; }
 
 /* -------------------- icons -------------*/
@@ -132,30 +124,22 @@
         font-size: 70px; }
       .icons .icons-list li h3 {
         margin: 24px auto;
-        font-family: Lato, sans-serif;
-        font-size: 22px;
-        font-weight: normal;
+        font: normal 22px Lato, sans-serif;
         color: #2d3950; }
       .icons .icons-list li p {
-        font-family: Lato, sans-serif;
-        font-size: 15px;
+        font: 15px Lato, sans-serif;
         color: #999; }
 
-/*-----------------thumbnails ---------*/
+/*-----------------portfolio ---------*/
 .portfolio {
   background-color: #f6f9f9;
   text-align: center; }
-  .portfolio h2 {
+  .portfolio .captions {
     margin-top: 70px;
-    margin-bottom: 15px;
-    font-family: Lato, sans-serif;
-    font-size: 41px;
-    font-weight: normal;
-    color: #2d3950; }
+    margin-bottom: 15px; }
   .portfolio p {
     margin-bottom: 70px;
-    font-family: Lato, sans-serif;
-    font-size: 15px;
+    font: 15px Lato, sans-serif;
     color: #909090; }
 
 .portfolio-list {
@@ -220,14 +204,9 @@
   text-align: center;
   background: linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
   background-size: cover; }
-  .feedback .wrapper {
-    width: 560px; }
-  .feedback h2 {
+  .feedback .captions {
     margin-top: 62px;
     margin-bottom: 20px;
-    font-family: Lato, sans-serif;
-    font-size: 41px;
-    font-weight: normal;
     color: white; }
   .feedback p {
     margin-bottom: 50px;
@@ -236,34 +215,27 @@
     color: #999; }
 
 #feedback-form {
-  width: inherit; }
+  width: 560px;
+  margin: 0 auto; }
   #feedback-form input[type="text"],
-  #feedback-form input[type="email"] {
+  #feedback-form input[type="email"],
+  #feedback-form textarea {
     width: 535px;
-    height: 62px;
-    margin-bottom: 16px;
-    padding-left: 21px;
+    margin-bottom: 15px;
+    padding-left: 20px;
     border: 1px solid #999;
     border-radius: 2px;
-    font-family: Lato, sans-serif;
-    font-size: 15px;
+    font: 15px Lato, sans-serif;
     background-color: transparent;
     outline: none;
     color: #999; }
+  #feedback-form input[type="text"],
+  #feedback-form input[type="email"] {
+    height: 62px; }
   #feedback-form textarea {
-    width: 534px;
     height: 137px;
-    margin-bottom: 15px;
-    padding-left: 20px;
     padding-top: 23px;
-    border: 1px solid #999;
-    border-radius: 2px;
-    resize: none;
-    outline: none;
-    color: #999;
-    font-family: Lato, sans-serif;
-    font-size: 15px;
-    background-color: transparent; }
+    resize: none; }
   #feedback-form input[type="checkbox"] {
     display: none; }
     #feedback-form input[type="checkbox"]:checked + label:before {
@@ -279,8 +251,7 @@
     display: inline-block;
     margin-top: 15px;
     padding-left: 25px;
-    font-family: Lato, sans-serif;
-    font-size: 15px;
+    font: 15px Lato, sans-serif;
     text-align: left;
     cursor: pointer;
     color: white; }

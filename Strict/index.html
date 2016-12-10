@@ -4,19 +4,7 @@
         <meta charset="UTF-8">
         <title>Home Work 7</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css"><!-- скрипты лучше подключать перед body (так перед body и подключено)-->
-        <script src="https://use.fontawesome.com/34414cec8f.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("#scroll").on("click","a", function (event) {
-                    event.preventDefault();
-                    var id  = $(this).attr('href'),
-                            top = $(id).offset().top;
-                    $('body,html').animate({scrollTop: top}, 700);
-                });
-            });
-        </script>
+        <link rel="stylesheet" href="css/style.css"><!-- скрипты лучше подключать перед body  FIXED-->
     </head>
     <body>
 
@@ -39,7 +27,7 @@
             <section class="intro" id="intro"><!-- класс для секции не подходит, это какраз интро  FIXED-->
 
                 <div class="wrapper">
-                    <h2>Simple & pure design.</h2>
+                    <h2 class="captions">Simple & pure design.</h2>
                     <p>
                         Designers everywhere gush with admiration upon seeing a web design and exclaim "its beautiful,
                         it's so clean!". There are a countless number of webdesign round-ups dedicated to 'clean' design
@@ -88,7 +76,7 @@
 
             <section class="portfolio"> <!-- ну это не миниатюры, а скорее .portfolio  FIXED -->
                 <div class="wrapper">
-                    <h2>Showcase your work like a pro.</h2><!--todo лучше добавлять класс для общих стилей -->
+                    <h2 class="captions">Showcase your work like a pro.</h2><!-- лучше добавлять класс для общих стилей FIXED -->
                     <p> Contact me if you like my work</p>
                     <ul class="portfolio-list">
                         <li>
@@ -111,7 +99,7 @@
                                     <li>
                                         <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                     </li>
-                                    <li><!-- todo сюда было бы круто добавить тоже ховер  -->
+                                    <li><!--  сюда было бы круто добавить тоже ховер  FIXED  -->
                                         <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     </li>
                                 </ul>
@@ -175,9 +163,9 @@
 
             <section class="feedback"><
                 <div class="wrapper">
-                    <h2>Stay with us</h2>
+                    <h2 class="captions">Stay with us</h2>
                     <p>We ensure quailty & support</p>
-                    <form action="#" id="feedback-form"><!-- todo ты решил, что списками верстать не круто? -->
+                    <form action="#" id="feedback-form"><!-- ты решил, что списками верстать не круто?  --Круто, но тут обошелся без списка  -->
                         <input type="text" name="Name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Email Address" required>
                         <textarea name="Message" placeholder="Message" required></textarea>
@@ -207,6 +195,21 @@
                 </ul>
             </div>
         </footer>
+
+
+<!--Scripts-->
+        <script src="https://use.fontawesome.com/34414cec8f.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#scroll").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 700);
+                });
+            });
+        </script>
 
     </body>
 </html>

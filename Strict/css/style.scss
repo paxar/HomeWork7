@@ -1,8 +1,8 @@
-@import "fonts";
-@import "mixins";
-@import "variables";
+@import "styles/fonts";
+@import "styles/mixins";
+@import "styles/variables";
 
-// todo сразу - давай, что бы файлы сасса и те, что он компилирует были в разных папках
+// сразу - давай, что бы файлы сасса и те, что он компилирует были в разных папках FIXED
 
 /*------------shared styles -------------------*/
 // подобные комменты лучше делать, что бы они компилировались тоже   FIXED
@@ -17,6 +17,12 @@
   overflow: hidden;
 }
 
+.captions {
+  font: normal 40px $Lato;
+  text-align: center;
+  color: $black;
+}
+
 /*-------------------- header ---------------------*/
 
 .header {
@@ -27,31 +33,27 @@
   }
 }
 
-/*---------------------- main ----------------------*/
-/* ----------------------- intro --------------------*/
+
+/* ----------------------- hero --------------------*/
 
 .hero {
   background: url("../img/bg-intro.png") center /cover no-repeat;
-  background-size: cover;// todo это можно запихнуть в сокращенную запись
+  //  это можно запихнуть в сокращенную запись  FIXED :-)
 
   h2 {
     width: 600px;
     margin: 200px auto 35px;
     padding-bottom: 5px;
     border-bottom: 2px solid $blue;
-    font-family: $Lato; //  todo и тут можно юзать сокращенную запись
-    font-size: 120px;
-    font-weight: 700;
+    font: 700 120px $Lato; //   и тут можно юзать сокращенную запись FIXED
     letter-spacing: 5px;
     text-align: center;
     color: $white;
-
   }
 
   p {
     padding-bottom: 42px;
-    font-family: $Lato;
-    font-size: 20px;
+    font: 20px $Lato;
     text-align: center;
     color: $white;
   }
@@ -63,8 +65,7 @@
     border: 1px solid $blue;
     border-radius: 2px;
     text-decoration: none;
-    font-family: $Lato;
-    font-size: 18px;
+    font: 18px $Lato;
     text-align: center;
     display: block;
     color: $white;
@@ -85,28 +86,21 @@
   }
 }
 
-/*---------------- content --------------*/
+/*---------------- intro --------------*/
 .intro {
   background-color: $bg-gray;
 
-  h2 {
+  .captions {
     margin-top: 76px;
     margin-bottom: 16px;
-    font-family: $Lato;
-    font-weight: normal;
-    font-size: 40px;
-    text-align: center;
-    color: $black;
   }
 
   p {
     width: 1130px;
     margin-top: 0;
     margin-bottom: 105px;
-    font-family: $Lato;
-    font-size: 20px;
+    font: 20px/32px $Lato;
     text-align: center;
-    line-height: 32px;
     color: $gray;
   }
 }
@@ -123,13 +117,11 @@
     list-style: none;
     text-align: center;
 
-
     li {
       display: inline-block;
       width: 300px;
       margin: 0 38px;
       text-align: center;
-
 
       &:nth-child(n+2) {
         margin-left: 48px;
@@ -144,7 +136,7 @@
 
       }
 
-      .fa {         // а мог бы просто на .fa повешать эти все стиля   FIXED
+      .fa { // а мог бы просто на .fa повешать эти все стиля   FIXED
         line-height: 100px;
         font-size: 40px;
         text-shadow: 1px 1px 1px #4468a9;
@@ -158,40 +150,32 @@
 
       h3 {
         margin: 24px auto;
-        font-family: $Lato;
-        font-size: 22px;
-        font-weight: normal;
+        font: normal 22px $Lato;
         color: $black;
       }
 
       p {
-        font-family: $Lato;
-        font-size: 15px;
+        font: 15px $Lato;
         color: $gray;
-    }
+      }
     }
   }
 }
 
-/*-----------------thumbnails ---------*/
+/*-----------------portfolio ---------*/
 
 .portfolio {
   background-color: $bg-gray;
   text-align: center;
 
-  h2 {
+  .captions {
     margin-top: 70px;
     margin-bottom: 15px;
-    font-family: $Lato;
-    font-size: 41px;
-    font-weight: normal;
-    color: $black;
   }
 
   p {
     margin-bottom: 70px;
-    font-family: $Lato;
-    font-size: 15px;
+    font: 15px $Lato;
     color: #909090;
   }
 }
@@ -201,7 +185,7 @@
   padding: 0;
   list-style: none;
 
-  >li { // сегодня говорили на уроке, в этой записи смысла нету   FIXED
+  > li { // сегодня говорили на уроке, в этой записи смысла нету   FIXED
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -222,7 +206,7 @@
   width: inherit;
   height: inherit;
   background-color: rgba(21, 164, 250, 0.8);
-  opacity: 0;  //hover hide
+  opacity: 0; //hover hide
   @include transition(0.6s);
 
   .hover-icons {
@@ -233,7 +217,6 @@
     li {
       display: inline-block;
       overflow: hidden;
-
 
       :hover {
         font-size: 24px;
@@ -253,7 +236,6 @@
         color: $white;
         @include transition(0.3s);
 
-
       }
     }
   }
@@ -262,19 +244,16 @@
 /*--------------- feedback -----------------*/
 .feedback {
   text-align: center;
-  background:  linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
+  background: linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
   background-size: cover;
 
-  .wrapper { // todo лучше сделать другой блок внутри враппера и на него уже вешать эти стиля, враппер он просто враппер и менять его размер не рекомендуется
-    width: 560px;
+  .wrapper {
   }
+  //  лучше сделать другой блок внутри враппера и на него уже вешать эти стиля, враппер он просто враппер и менять его размер не рекомендуется  FIXED
 
-  h2 {
+  .captions {
     margin-top: 62px;
     margin-bottom: 20px;
-    font-family: $Lato;
-    font-size: 41px;
-    font-weight: normal;
     color: $white;
   }
 
@@ -287,37 +266,33 @@
 }
 
 #feedback-form {
-  width: inherit;
+  width: 560px;
+  margin: 0 auto;
 
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  textarea {
     width: 535px;
-    height: 62px;
-    margin-bottom: 16px;
-    padding-left: 21px;
+    margin-bottom: 15px;
+    padding-left: 20px;
     border: 1px solid $gray;
     border-radius: 2px;
-    font-family: Lato, sans-serif;
-    font-size: 15px;
+    font: 15px $Lato;
     background-color: transparent;
     outline: none;
     color: $gray;
   }
 
+  input[type="text"],
+  input[type="email"] {
+    height: 62px;
+  }
+
   textarea {
-    width: 534px;
     height: 137px;
-    margin-bottom: 15px;
-    padding-left: 20px;
     padding-top: 23px;
-    border: 1px solid $gray;
-    border-radius: 2px;
     resize: none;
-    outline: none;
-    color: $gray; // todo у тебя повторяются стиля на инпутах и тут, можно было это просто вынести как-то
-    font-family: Lato, sans-serif;
-    font-size: 15px;
-    background-color: transparent;
+    //  у тебя повторяются стиля на инпутах и тут, можно было это просто вынести как-то FIXED
   }
 
   input[type="checkbox"] {
@@ -339,8 +314,7 @@
     display: inline-block;
     margin-top: 15px;
     padding-left: 25px;
-    font-family: $Lato;
-    font-size: 15px;
+    font: 15px $Lato;
     text-align: left;
     cursor: pointer;
     color: $white;
