@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Light.eot");
+  src: url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype"), url("../fonts/Lato-Light.svg#Lato-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+.body {
+  font-family: Lato, sans-serif; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.top-panel {
+  text-align: center;
+  background-color: #194277; }
+  .top-panel p {
+    display: inline-block;
+    margin: 28px 0;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    color: white; }
+  .top-panel a {
+    width: 112px;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 8px 0;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    color: #194277;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+    .top-panel a:hover {
+      background: transparent;
+      color: white;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+
+.section-bg {
+  background: url("../img/bg-image.png") center no-repeat;
+  background-size: cover; }
+
+.header {
+  overflow: hidden; }
+  .header nav {
+    float: right;
+    margin-top: 35px; }
+
+.intro .border {
+  display: table;
+  margin: 35px auto 0;
+  border: 10px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%; }
+  .intro .border img {
+    display: block;
+    border: 9px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%; }
+.intro h1 {
+  width: 810px;
+  margin: 43px auto 0;
+  font-family: Lato, sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+.intro p {
+  width: 765px;
+  margin: 20px auto 0;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+.intro .intro-button {
+  display: block;
+  margin: 68px auto 0;
+  width: 204px;
+  padding: 12px 0;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 32px;
+  color: #3695ff;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .intro .intro-button:hover {
+    background-color: transparent;
+    color: white;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+.intro .intro-scroll-link {
+  width: 23px;
+  display: block;
+  margin: 94px auto 15px;
+  text-align: center; }
+
+.content h2 {
+  margin-top: 90px;
+  color: #3695ff;
+  font-family: Lato, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center; }
+.content p {
+  width: 1135px;
+  margin: 46px auto 104px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+  color: #5a5a5a; }
+
+.icons {
+  background-color: #f1f8ff; }
+  .icons h2 {
+    margin-top: 80px;
+    color: #3695ff;
+    font-family: Lato, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center; }
+
+.icons-list {
+  margin-top: 115px;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  .icons-list li {
+    display: inline-block;
+    width: 360px;
+    margin: 0 25px 72px;
+    text-align: center; }
+    .icons-list li .icons-list-icon-wrapper {
+      width: 142px;
+      height: 142px;
+      margin: 0 auto;
+      border: 1px solid #b7c0c9;
+      border-radius: 50%;
+      line-height: 142px; }
+      .icons-list li .icons-list-icon-wrapper img {
+        vertical-align: middle; }
+    .icons-list li h3 {
+      margin-top: 55px;
+      margin-bottom: 0;
+      font-family: Lato, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #3695ff; }
+    .icons-list li p {
+      margin-top: 20px;
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 35px;
+      color: #5a5a5a; }
+    .icons-list li:nth-child(2), .icons-list li:nth-child(5) {
+      width: 305px; }
+
+.thumbnails h2 {
+  margin-top: 75px;
+  color: #3695ff;
+  font-family: Lato, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center; }
+
+.thumbnails-list {
+  overflow: hidden;
+  margin-top: 73px;
+  margin-bottom: 166px;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  .thumbnails-list li {
+    float: left;
+    margin: 25px 13px; }
+    .thumbnails-list li a {
+      display: block;
+      width: 361px;
+      height: 271px;
+      background-color: #f4f4f4;
+      border: 1px solid #f4f4f4;
+      border-radius: 10px;
+      line-height: 271px;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      .thumbnails-list li a:hover {
+        -webkit-box-shadow: 0 1px 5px 0 #4e63e6;
+        -moz-box-shadow: 0 1px 5px 0 #4e63e6;
+        box-shadow: 0 1px 5px 0 #4e63e6;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
+      .thumbnails-list li a img {
+        vertical-align: bottom; }
+    .thumbnails-list li:nth-child(n+4) img {
+      vertical-align: middle; }
+
+.partners {
+  background-color: #f1f8ff; }
+  .partners h2 {
+    padding-top: 40px;
+    color: #3695ff;
+    font-family: Lato, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center; }
+
+.partners-list {
+  margin-top: 53px;
+  margin-bottom: 90px;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  .partners-list li {
+    display: inline-block;
+    height: 80px;
+    margin: 0 58px;
+    line-height: 80px; }
+    .partners-list li a {
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+      .partners-list li a:hover {
+        -webkit-filter: contrast(40%);
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+    .partners-list li img {
+      vertical-align: middle; }
+
+.footer {
+  background: url("../img/bg-image.png") center no-repeat;
+  background-size: cover; }
+  .footer .footer-text1,
+  .footer .footer-text2 {
+    display: inline-block;
+    margin-top: 90px;
+    margin-bottom: 95px;
+    font-family: Lato, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: white; }
+  .footer .footer-text2 {
+    font-weight: bold; }
+  .footer .footer-button {
+    float: right;
+    margin-top: 97px;
+    margin-right: 48px;
+    width: 204px;
+    padding: 12px 0;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 32px;
+    color: #3695ff;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+    .footer .footer-button:hover {
+      background-color: transparent;
+      color: white;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+
+/*# sourceMappingURL=style.css.map */

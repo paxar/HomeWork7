@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Home Work 7</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css"><!-- TODO скрипты лучше подключать перед body-->
+        <link rel="stylesheet" href="css/style.css"><!-- скрипты лучше подключать перед body (так перед body и подключено)-->
         <script src="https://use.fontawesome.com/34414cec8f.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript">
@@ -26,17 +26,17 @@
             </div>
         </header>
 
-        <main><!-- TODO на лендингах нету главной части контента, так что лучше это не делать-->
-            <section class="intro"><!-- TODO это называется .hero -->
+       <!-- на лендингах нету главной части контента, так что лучше это не делать   fixed-->
+            <section class="hero"><!-- это называется .hero  FIXED -->
                 <div class="wrapper" id="scroll">
                     <h2>STRICT</h2>
                     <p>STRICT is a responsive theme with a a clean and minimal look.</p>
-                    <a class="intro-button" href="#">Call to action</a>
-                    <a class="intro-scroll-link" href="#content"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <a class="hero-button" href="#">Call to action</a>
+                    <a class="hero-scroll-link" href="#intro"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
             </section>
 
-            <section class="content" id="content"><!-- TODO класс для секции не подходит, это какраз интро-->
+            <section class="intro" id="intro"><!-- класс для секции не подходит, это какраз интро  FIXED-->
 
                 <div class="wrapper">
                     <h2>Simple & pure design.</h2>
@@ -53,7 +53,9 @@
                 <div class="wrapper">
                     <ul class="icons-list">
                         <li>
-                            <i class="fa fa-mobile" aria-hidden="true"></i><!-- TODO я бы добавил враппер сюда, что бы не стилить i-->
+                            <div class="icon-wrapper">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                            </div><!-- я бы добавил враппер сюда, что бы не стилить i    FIXED-->
                             <h3>Optimized for all devices</h3>
                             <p>
                                 STRICT has been designed to be fully
@@ -61,7 +63,9 @@
                             </p>
                         </li>
                         <li>
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </div>
                             <h3>Clean & Minimal Design</h3>
                             <p>
                                 This multipurpose theme is especially created
@@ -69,7 +73,9 @@
                             </p>
                         </li>
                         <li>
-                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                            <div class="icon-wrapper">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                            </div>
                             <h3>Font Awesome Icon</h3>
                             <p>
                                 This multipurpose theme is especially created
@@ -80,11 +86,11 @@
                 </div>
             </section>
 
-            <section class="thumbnails"> <!-- todo ну это не миниатюры, а скорее .portfolio -->
+            <section class="portfolio"> <!-- ну это не миниатюры, а скорее .portfolio  FIXED -->
                 <div class="wrapper">
                     <h2>Showcase your work like a pro.</h2><!--todo лучше добавлять класс для общих стилей -->
                     <p> Contact me if you like my work</p>
-                    <ul class="thumbnails-list">
+                    <ul class="portfolio-list">
                         <li>
                             <img src="img/photo1.png" alt="thumbnail image">
                             <div class="hover">
@@ -181,8 +187,6 @@
                     </form>
                 </div>
             </section>
-
-        </main>
 
         <footer class="footer">
             <div class="wrapper">

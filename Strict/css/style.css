@@ -4,24 +4,28 @@
   src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+/*------------shared styles -------------------*/
 .body {
   font-family: Lato, sans-serif;
   color: #2d3950; }
 
 .wrapper {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
   overflow: hidden; }
 
+/*-------------------- header ---------------------*/
 .header {
   background-color: #f6f9f9; }
   .header h1 {
     margin: 27px 35px; }
 
-.intro {
-  background: url("../img/bg-intro.png") center no-repeat;
+/*---------------------- main ----------------------*/
+/* ----------------------- intro --------------------*/
+.hero {
+  background: url("../img/bg-intro.png") center/cover no-repeat;
   background-size: cover; }
-  .intro h2 {
+  .hero h2 {
     width: 600px;
     margin: 200px auto 35px;
     padding-bottom: 5px;
@@ -32,13 +36,13 @@
     letter-spacing: 5px;
     text-align: center;
     color: white; }
-  .intro p {
+  .hero p {
     padding-bottom: 42px;
     font-family: Lato, sans-serif;
     font-size: 20px;
     text-align: center;
     color: white; }
-  .intro .intro-button {
+  .hero .hero-button {
     width: 178px;
     margin: 0 auto 165px;
     padding: 17px 0;
@@ -54,22 +58,23 @@
     -o-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s; }
-    .intro .intro-button:hover {
+    .hero .hero-button:hover {
       background-color: #15a4fa;
       -webkit-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
       transition-duration: 0.2s; }
-  .intro .intro-scroll-link {
+  .hero .hero-scroll-link {
     display: block;
     margin: 0 auto 72px;
     font-size: 36px;
     color: white;
     text-align: center; }
 
-.content {
+/*---------------- content --------------*/
+.intro {
   background-color: #f6f9f9; }
-  .content h2 {
+  .intro h2 {
     margin-top: 76px;
     margin-bottom: 16px;
     font-family: Lato, sans-serif;
@@ -77,7 +82,7 @@
     font-size: 40px;
     text-align: center;
     color: #2d3950; }
-  .content p {
+  .intro p {
     width: 1130px;
     margin-top: 0;
     margin-bottom: 105px;
@@ -87,29 +92,27 @@
     line-height: 32px;
     color: #999; }
 
+/* -------------------- icons -------------*/
 .icons {
   background-color: white; }
   .icons .icons-list {
     margin-top: 65px;
     margin-bottom: 52px;
-    list-style: none; }
+    padding: 0;
+    list-style: none;
+    text-align: center; }
     .icons .icons-list li {
       display: inline-block;
-      width: 316px;
-      margin: 0 24px;
+      width: 300px;
+      margin: 0 38px;
       text-align: center; }
       .icons .icons-list li:nth-child(n+2) {
         margin-left: 48px; }
-      .icons .icons-list li .fa-paper-plane,
-      .icons .icons-list li .fa-mobile,
-      .icons .icons-list li .fa-bullhorn {
+      .icons .icons-list li .icon-wrapper {
         width: 100px;
         height: 100px;
+        margin: auto;
         border-radius: 2px;
-        line-height: 100px;
-        font-size: 40px;
-        text-shadow: 1px 1px 1px #4468a9;
-        color: white;
         background: #2ab0ed;
         /* Old browsers */
         background: -moz-linear-gradient(left, #2ab0ed 51%, #bfe8f9 51%, #48baff 51%, #5fc3ff 51%);
@@ -120,6 +123,11 @@
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#5fc3ff',GradientType=1 );
         /* IE6-9 */ }
+      .icons .icons-list li .fa {
+        line-height: 100px;
+        font-size: 40px;
+        text-shadow: 1px 1px 1px #4468a9;
+        color: white; }
       .icons .icons-list li .fa-mobile {
         font-size: 70px; }
       .icons .icons-list li h3 {
@@ -133,34 +141,35 @@
         font-size: 15px;
         color: #999; }
 
-.thumbnails {
+/*-----------------thumbnails ---------*/
+.portfolio {
   background-color: #f6f9f9;
   text-align: center; }
-  .thumbnails h2 {
+  .portfolio h2 {
     margin-top: 70px;
     margin-bottom: 15px;
     font-family: Lato, sans-serif;
     font-size: 41px;
     font-weight: normal;
     color: #2d3950; }
-  .thumbnails p {
+  .portfolio p {
     margin-bottom: 70px;
     font-family: Lato, sans-serif;
     font-size: 15px;
     color: #909090; }
 
-.thumbnails-list {
+.portfolio-list {
   margin-bottom: 100px;
   padding: 0;
   list-style: none; }
-  .thumbnails-list > li {
+  .portfolio-list > li {
     display: inline-block;
     overflow: hidden;
     position: relative;
     width: 360px;
     height: 260px;
     margin: 13px; }
-  .thumbnails-list li:hover .hover {
+  .portfolio-list li:hover .hover {
     opacity: 1;
     -webkit-transition-duration: 0.6s;
     -o-transition-duration: 0.6s;
@@ -183,7 +192,14 @@
     padding: 0;
     list-style: none; }
     .hover .hover-icons li {
-      display: inline-block; }
+      display: inline-block;
+      overflow: hidden; }
+      .hover .hover-icons li :hover {
+        font-size: 24px;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
       .hover .hover-icons li a {
         width: 42px;
         height: 42px;
@@ -193,8 +209,13 @@
         text-decoration: none;
         line-height: 43px;
         font-size: 16px;
-        color: white; }
+        color: white;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
 
+/*--------------- feedback -----------------*/
 .feedback {
   text-align: center;
   background: linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url("../img/bg-feedback.png");
@@ -296,6 +317,7 @@
       -moz-transition-duration: 0.2s;
       transition-duration: 0.2s; }
 
+/*---------------footer ---------------*/
 .footer {
   background-color: #f6f9f9; }
   .footer span {
